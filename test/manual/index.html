@@ -110,6 +110,39 @@
       })
     }
 
+    function printJsonUnRe() {
+      let data = []
+      for (let i=0; i <= 1000; i++) {
+        data.push({
+          test1: createRandomString(),
+          test2: createRandomString()
+        })
+      }
+
+      printJS({
+        printable: data,
+        repeatTableHeader:false,
+        properties: [
+          {
+            field: 'test1',
+            displayName: 'test 1',
+            columnSize: 1
+          },
+          {
+            field: 'test2',
+            displayName: 'test 2',
+            columnSize: 4
+          }
+        ],
+        type: 'json',
+        header: 'JSON Print Test',
+        footer: 'JSON Print Footer',
+				documentTitle: 'Print.js JSON Test'
+      })
+    }
+
+
+
     function printStyledJson() {
       let data = [
         {
@@ -127,7 +160,7 @@
         properties: ['test1', 'test2'],
         type: 'json',
         gridStyle: 'border: 2px solid #3971A5;',
-				gridHeaderStyle: 'color: red;  border: 2px solid #3971A5;',
+				gridHeaderStyle: 'background: red;color: red;  border: 2px solid #3971A5;',
       })
     }
 
@@ -257,6 +290,9 @@
       <p>
         <button onClick='printJson();'>
           Print JSON
+        </button>
+        <button onClick='printJsonUnRe();'>
+          Print JSON UnRe
         </button>
         <button onClick='printStyledJson();'>
           Print Styled JSON

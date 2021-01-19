@@ -3,7 +3,6 @@
 [![Build Status](https://travis-ci.org/crabbly/Print.js.svg?branch=master)](https://travis-ci.org/crabbly/Print.js)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat)](LICENSE)
 [![Standard - JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](http://standardjs.com/)
-[![npm](https://img.shields.io/npm/v/print-js.svg)](https://www.npmjs.com/package/print-js)
 
 A tiny javascript library to help printing from the web.
 
@@ -16,19 +15,19 @@ You can download the latest version of Print.js from the [GitHub releases](https
 To install via npm:
 
 ```bash
-npm install print-js --save
+npm install print-js-qianjie --save
 ```
 
 To install via yarn:
 
 ```bash
-yarn add print-js
+yarn add print-js-qianjie
 ```
 
 Import the library into your project:
 
 ```js
-import printJS from 'print-js'
+import printJS from 'print-js-qianjie'
 ```
 
 ## Documentation
@@ -88,6 +87,7 @@ npm run test
 To manually test the library features:
 
 ```bash
+npm run dev
 npm start
 ```
 
