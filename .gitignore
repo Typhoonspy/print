@@ -4,4 +4,5 @@ dist/
 yarn.lock
 coverage/
 .vscode
+.history
 package-lock.json
